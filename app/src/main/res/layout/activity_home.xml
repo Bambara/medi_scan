@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box5"
+        android:layout_width="349dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#0000FF"
+        android:onClick="gotoaccountpage"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902">
+
+        <TextView
+            android:id="@+id/account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="15sp"
+            android:text="Account"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/accountimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            app:srcCompat="@drawable/account" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box4"
+        android:layout_width="349dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#0000FF"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745"
+        tools:onClick="gototutorialspage">
+
+        <TextView
+            android:id="@+id/tutorials_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="15sp"
+            android:text="Tutorials"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/playimage"
+            android:layout_width="46dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            app:srcCompat="@drawable/play" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box2"
+        android:layout_width="349dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#0000FF"
+        android:onClick="gotomedicinedatapage"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435">
+
+        <TextView
+            android:id="@+id/medicine_data_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="15sp"
+            android:text="Medicine Data"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/databaseimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            app:srcCompat="@drawable/database" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/backbutton4"
+        android:layout_width="42dp"
+        android:layout_height="31dp"
+        android:onClick="backTo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/baseline_logout_24" />
+
+    <TextView
+        android:id="@+id/homepagewords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textColor="#050505"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box3"
+        android:layout_width="349dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#0000FF"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59"
+        tools:onClick="gotonearsthospitialpage">
+
+        <TextView
+            android:id="@+id/nearest_hospital_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="15sp"
+            android:text="Nearest Hospital"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/locationsimage"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            app:srcCompat="@drawable/location" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usernamehint"
+        android:layout_width="349dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#0000FF"
+        android:onClick="gotoScannerpage"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281">
+
+        <TextView
+            android:id="@+id/scanner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="15sp"
+            android:text="Scanner"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            android:textSize="28sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/scannersimage"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            app:srcCompat="@drawable/scanner" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/settingimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goMenuPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/setting" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
