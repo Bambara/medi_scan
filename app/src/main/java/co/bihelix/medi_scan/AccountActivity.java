@@ -38,8 +38,8 @@ public class AccountActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
             // If user is already signed in navigate to the home page
-            Intent intent = new Intent(AccountActivity.this, HomeActivity.class);
-            startActivity(intent);
+//            Intent intent = new Intent(AccountActivity.this, HomeActivity.class);
+//            startActivity(intent);
         }
     }
 

@@ -12,7 +12,7 @@
         android:layout_width="349dp"
         android:layout_height="67dp"
         android:backgroundTint="#0000FF"
-        android:onClick="gotoaccountpage"
+        android:onClick="goToAccount"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,14 +48,14 @@
         android:layout_width="349dp"
         android:layout_height="67dp"
         android:backgroundTint="#0000FF"
+        android:onClick="goToTutorials"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.596"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745"
-        tools:onClick="gototutorialspage">
+        app:layout_constraintVertical_bias="0.745">
 
         <TextView
             android:id="@+id/tutorials_text"
@@ -84,7 +84,7 @@
         android:layout_width="349dp"
         android:layout_height="67dp"
         android:backgroundTint="#0000FF"
-        android:onClick="gotomedicinedatapage"
+        android:onClick="gotoMedicineData"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,14 +148,14 @@
         android:layout_width="349dp"
         android:layout_height="67dp"
         android:backgroundTint="#0000FF"
+        android:onClick="goToNearstHospitials"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.596"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59"
-        tools:onClick="gotonearsthospitialpage">
+        app:layout_constraintVertical_bias="0.59">
 
         <TextView
             android:id="@+id/nearest_hospital_text"
@@ -184,7 +184,7 @@
         android:layout_width="349dp"
         android:layout_height="67dp"
         android:backgroundTint="#0000FF"
-        android:onClick="gotoScannerpage"
+        android:onClick="gotoScanner"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

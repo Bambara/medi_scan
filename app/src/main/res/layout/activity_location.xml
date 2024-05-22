@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AiActivity">
+    tools:context=".LocationActivity">
 
     <Button
-        android:id="@+id/finishbutton"
+        android:id="@+id/finishbuttons"
         android:layout_width="250dp"
         android:layout_height="54dp"
-        android:onClick="finishthis"
+        android:onClick="gotofinishthis"
         android:text="Finish"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -21,107 +21,104 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintVertical_bias="0.945" />
 
     <ImageView
-        android:id="@+id/backbutton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/backimage5"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
         android:onClick="logOut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/back" />
 
-
-    <TextView
-        android:id="@+id/aimodelword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AI Model is the Chat Gpt "
-        android:textColor="#121111"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
-
     <ImageView
-        android:id="@+id/gptimage"
-        android:layout_width="170dp"
-        android:layout_height="166dp"
+        android:id="@+id/locationimage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329"
-        app:srcCompat="@drawable/cgpt" />
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/location" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
 
     <TextView
-        android:id="@+id/texts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Milli Grams"
+        android:id="@+id/hints"
+        android:layout_width="356dp"
+        android:layout_height="125dp"
+        android:text="   Connected  the Google Map "
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textColorHighlight="#000000"
+        android:textSize="20sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
+        app:layout_constraintVertical_bias="0.849" />
 
     <TextView
-        android:id="@+id/texts2"
+        android:id="@+id/hint2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generic Name "
-        android:textColor="#070707"
-        android:textSize="30sp"
+        android:text="Nearest Hospitals "
+        android:textColor="#090909"
+        android:textSize="20sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <TextView
-        android:id="@+id/texts4"
+        android:id="@+id/hint1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Brand Name "
-        android:textColor="#040404"
-        android:textSize="30sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
-
-    <TextView
-        android:id="@+id/texts3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Side Effects "
+        android:text="and find the"
         android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+    <TextView
+        android:id="@+id/nearsthospitalwords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearest Hospitals "
+        android:textColor="#020202"
         android:textSize="30sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
+        app:layout_constraintVertical_bias="0.083" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
